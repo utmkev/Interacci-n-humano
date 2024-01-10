@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <LINK REL="stylesheet" TYPE="text/css" HREF="css/style.css">
+</head>
+
+<div>
+
+  <body>
+    <form id="frm1" name="calculator">
+      <div class="cardImc">
+        <output type="textfield" name="ans" value="">
+          <label class="text">Proporcion Altura Peso</label>
+      </div>
+      <div class="cardImc">
+        <form id="formulario" onsubmit="calcularIMC(); return false">
+          <label for="nombre">Escribe tu NOMBRE:</label>
+          <input type="text" id="nombre" required="required">
+          <br>
+          <label for="altura">Escribe tu ALTURA actual (cm):</label>
+          <input type="text" id="altura" required="required">
+          <br>
+          <label for="peso">Escribe tu PESO actual (kg):</label>
+          <input type="text" id="peso" required="required">
+          <br>
+          <output class="imcresultado" id="contenido" />
+          <output class="imcresultado" id="resultado" />
+
+          <div class="cardImc">
+            <button class="button2" type="submit" onclick="calcularIMC();">Calcular IMC</button>
+          </div>
+        </form>
+      </div>
+    </form>
+</div>
+<div class="bottom">
+  <a class="button2" href="resultado.html">Resultados</a>
+</div>
+</form>
+</body>
+<script src="calcularIMC.js">
+</script>
+</div>
+
+</html>
